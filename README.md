@@ -1,8 +1,8 @@
 # Lista de Tarefas
 
 
-**Lista de Tarefas
-** é um projeto criado com o objetivo de praticar e aprimorar habilidades em HTML, CSS e JavaScript. Ele simula uma simples lista de tarefas, focando em boas práticas de codificação.
+**Lista de Tarefas** 
+é um projeto criado com o objetivo de praticar e aprimorar habilidades em HTML, CSS e JavaScript. Ele simula uma simples lista de tarefas, focando em boas práticas de codificação.
 
 ## 🔍 Visão Geral
 
@@ -15,7 +15,7 @@
   - Adição de tarefas simples.
   - Marcação de tarefas completas.
   - Componentes reutilizáveis para facilitar a manutenção.
-  - Organização de arquivos em pastas como `assets/`, `css/`, `css/`.
+  - Organização de arquivos em pastas como `assets/`, `css/`, `js/`.
 
 ## 📁 Estrutura do Projeto
 ```
