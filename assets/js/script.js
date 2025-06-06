@@ -12,7 +12,17 @@ function renderList() {
 
     for (let index in tasks) {
         let taskLi = document.createElement('li');
-        taskLi.innerHTML = tasks[index].title;
+
+        let taskInput = document.createElement('input');
+        taskInput.setAttribute('type', 'checkbox')
+        
+        taskLi.appendChild(taskInput);
+
+        let taskSpan = document.createElement('span');
+        taskSpan.innerHTML = tasks[index].title;
+
+        taskLi.appendChild(taskSpan);
+
 
         list.appendChild(taskLi);
     }
