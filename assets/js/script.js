@@ -2,9 +2,9 @@ let input = document.querySelector('.input');
 let list = document.querySelector('.list');
 
 let tasks = [
-    {done : false, title : "Comprar corante para o o bolo"},
-    {done : true, title: "Fazer academia"},
-    {done : true, title: "estudar na b7web"}
+    {done : false, title : "Fazer a primeira tarefa"},
+    {done : true, title: "Fazer a segunda tarefa"},
+    {done : false, title: "Fazer a terceira tarefa"}
 ];
 
 input.addEventListener('keyup', (event) => {
@@ -25,7 +25,18 @@ function renderList() {
         let taskLi = document.createElement('li');
 
         let taskInput = document.createElement('input');
-        taskInput.setAttribute('type', 'checkbox')
+        taskInput.setAttribute('type', 'checkbox');
+
+        if (tasks[index].done === true) {
+            taskInput.setAttribute('checked', 'true');
+            taskLi.classList.add('done');
+        }
+
+        taskInput.addEventListener('click', () => {
+            tasks[index].done = !tasks[index].done;
+            
+            renderList();
+        });
         
         taskLi.appendChild(taskInput);
 
