@@ -7,6 +7,17 @@ let tasks = [
     {done : true, title: "estudar na b7web"}
 ];
 
+input.addEventListener('keyup', (event) => {
+    if (event.key.toLowerCase() === 'enter' && input.value.length > 0) {
+        tasks.push({
+            done: false,
+            title: input.value
+        });
+        input.value = '';
+        renderList();
+    }
+});
+
 function renderList() {
     list.innerHTML = '';
 
